@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>body {
+  background-image: url("fond.jpg");
+}</style>
+</head>
+<body>
+ 
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block" style="display:none;z-index:5" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">Fermer&times;</button>
+  <a href="Page d'accueil.html" class="w3-bar-item w3-button">Page d'acceuil</a>
+  <a href="Mes projets.html" class="w3-bar-item w3-button">Projet</a>
+  <a href="Compétences.html" class="w3-bar-item w3-button">Compétences</a>
+  <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+   
+     
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+<br>
+    <div class="w3-card-4" style="width: 100%;" >
+    <header class="w3-container w3-blue">
+      <h1>Qui je suis</h1>
+  </div>
+  </header>
+  
+  <div class="w3-container w3-light-grey">
+  <p>Je m'appele Zaki Bosc, je suis actuellement en classe de terminal STI2D spécialité SIN, je suis un jeune passioné de jeux vidéo et d'informatique</p>
+
+  <div class="w3-padding w3-display-bottommiddle">
+    <img src="Photo irl.jpg" alt="Zaki irl" width="425" height="600"> 
+  </div>
+  </div> 
+
+    
+</body>
+</html>
