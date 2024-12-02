@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>body {
+  background-image: url("fond.jpg");
+}</style>
+</head>
+
+ 
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block" style="display:none;z-index:5" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">Fermer&times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Page d'acceuil</a>
+  <a href="Mes projets.html" class="w3-bar-item w3-button">Projet</a>
+  <a href="Compétences.html" class="w3-bar-item w3-button">Compétences</a>
+  <a href="Compétences Arduino.html" class="w3-bar-item w3-button"> Compétences Arduino</a>
+  <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+   
+     
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+<div class="w3-container w3-display-left">
+  <img src="Capture 1.PNG" alt="Norway">
+</div>
+<div class="w3-container w3-display-bottomright">
+  <img src="Capture 2.PNG" alt="Norway">
+</div>
+<div class="w3-container w3-display-topright">
+  <img src="Fichier.gif" alt="Norway">
+</div>
+  
+
+<div class="w3-container w3-display-right">
+  <div class="w3-card-4" style="width: 100%;">
+  <header class="w3-container w3-blue">
+    <h1>Ancien projet</h1>
+</div>
+</header>
+
+<div class="w3-container w3-light-grey">
+<p>L'objectif de ce projet était de construire totalement un abri durable aux chauves-souris qui pourrait les protéger de différent danger tout en répondant a différentes contraintes 
+  <br>
+  Voici l'abri final:<p>
+</div>
+</div>
+  </p>
+</div> 
+<div class="w3-container w3-display-topmiddle">
+
+  <div class="w3-card-4 w3-center" style="width:100%;">
+    <header class="w3-container w3-blue">
+      <h1>Mes anciens projets</h1>
+</div>
+</header>
+
+<div class="w3-container w3-light-grey">
+<p>Voici une présentation de tout les projets auquel j'ai pus participé ces dernières années :<p>
+</div>
+
+
+
+
+
+
+</body>
+</html>
