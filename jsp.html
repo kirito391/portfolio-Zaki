@@ -10,6 +10,27 @@
     body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
     .w3-third img:hover{opacity: 1}
+  .w3-row-padding {
+  display: flex;
+  flex-wrap: wrap;
+  .w3-third img {
+  width: 100%;
+  height: 200px; /* fixe la hauteur de toutes les images */
+  object-fit: cover; /* recadre l'image sans la déformer */
+  margin-bottom: -6px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+}
+
+.w3-third {
+  display: flex;
+  flex-direction: column;
+}
+
+.w3-third .w3-container {
+  flex: 1; /* permet au texte de remplir et égaliser la hauteur */
+}
   </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -38,22 +59,36 @@
     <div class="w3-container w3-dark-grey w3-center w3-padding-32">
       <h2 class="w3-text-light-grey"><b>Mes Projets</b></h2>
     </div>
-
-    <div class="w3-row-padding w3-padding-32 w3-container">
-      <div class="w3-third w3-margin-bottom">
-        <img src="ECO-BAT.jpg" alt="Projet 1" style="width:100%" onclick="onClick(this)">
-        <div class="w3-container w3-white">
-          <h4><b>Projet 1 : Abri à Chauve-Souris</b></h4>
-          <p>Un Abri a Chauve-Souris crée en classe de 1ère. A l'aide d'une découpe laser, nous avons découper du bois pour crée plusieurs pièces pour finalement les assembler pour obtenir un abri a chauve souris. Différentes pièces on été générés en 3D sur solidwork.</p>        </div>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <img src="VRUM.jpg" alt="Projet 2" style="width:100%" onclick="onClick(this)">
-        <div class="w3-container w3-white">
-          <h4><b>Projet 2 :  Voiture télécomandé</b></h4>
-<p>En classe de seconde, nous avons assemblé a l'aide d'une planche modélisé en 3D, d'une carte arduino, d'un moteur et des roues pour obtenir un prototype de voiture télécomandé </p>        </div>
-      </div>
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-third w3-margin-bottom">
+    <img src="VRUM.jpg" alt="Projet 1" style="width:100%" onclick="onClick(this)">
+    <div class="w3-container w3-white">
+      <h4><b>Projet 1 : Voiture télécommandée</b></h4>
+      <p>En classe de seconde, nous avons assemblé à l'aide d'une planche modélisée en 3D, d'une carte Arduino, d'un moteur et de roues pour obtenir un prototype de voiture télécommandée.</p>
     </div>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <img src="ECO-BAT.jpg" alt="Projet 2" style="width:100%" onclick="onClick(this)">
+    <div class="w3-container w3-white">
+      <h4>  <a href="https://www.canva.com/design/DAF6tj2KuyI/_bbdI81dUOKoRGPR24zmzQ/edit?utm_content=DAF6tj2KuyI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><b>Projet 2 : Abri à Chauve-Souris</b></a></h4>
+      <p>Un Abri a Chauve-Souris créé en classe de 1ère. À l'aide d'une découpe laser, nous avons découpé du bois pour assembler un abri à chauve-souris. Certaines pièces ont été modélisées en 3D sur Solidworks.</p>
+    </div>
+  </div>
+
+
+  <div class="w3-third w3-margin-bottom">
+    <img src="MaisonArduino.jpg" alt="Projet 3" style="width:100%" onclick="onClick(this)">
+    <div class="w3-container w3-white">
+<h4>
+  <a href="https://www.canva.com/design/DAGkVg4U7pA/8vG8gGJ9q35Rn1Mi2pRzTw/edit?utm_content=DAGkVg4U7pA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><b>Projet 3 : Domotique Défensive</b></a>
+</h4>
+      <p>En classe de terminale, nous avons fait a l'aide de différents capteur et du logiciel Arduino, un système d'alarme conçu pour cette maquette de maison.</p>
+    </div>
+  </div>
+
+</div>
+
 
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
